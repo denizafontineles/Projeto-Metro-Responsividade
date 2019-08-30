@@ -67,6 +67,7 @@ font-size: 10px;
 
 .estacoes__nome{
     display: flex;
+    margin: -20px -70px;
    
 }
 
@@ -83,34 +84,27 @@ font-size: 10px;
 }
 
 .estacoes__lista li{
-    list-style: none;
+    list-style-type: none;
     font-style: italic;
     line-height: 3.6;
     justify-content: flex-start;
-    font-size: 12px;
-    /* margin-top: 28px;
-    margin: 0; */
+    font-size: 14px;
+    margin-top: 28px;
+    margin: 10px;
 }
 
 .estacoes__barra{
     display: grid;
-}
-
-.estacoes__circle{
-    display: grid;
-    width: 100%;
-    height: 68%;
-    margin-top: 72px;
-    margin-left: 6px;
-}
-
-.circle{
-    background-color:white;
-    height:12px;
-    width: 12px;
-    border-radius: 50%;
-    grid-auto-flow: column;
-    grid-column-gap: 10px;
+} 
     
+    .circle{
+display: inline-block;
+margin-right: 24px;
+width: 12px;
+height: 12px;
+background-color: #ffffff;
+border-radius: 100%;
+box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
+position: relative;
+z-index: 999;
 }
-
