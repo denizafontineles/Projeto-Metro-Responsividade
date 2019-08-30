@@ -127,16 +127,36 @@ body {
 
 /* =====Media Query===== */
 
-@media (min-width: 960px) {
-    body {
-        height: 100vh;
-        display: flex;
-    }
-    .container-cabecalho {
-        width: 50%;
-        height: 100vh;
-    }
-    .container-estacoes {
-        width: 50%;
-    }
-}
+ @media (min-width: 960px) {
+            body {
+                height: 100%;
+                display: flex;
+            }
+            .conteudo__titulo h1 {
+                font-size: 40px;
+            }
+            .conteudo__texto p {
+                font-size: 20px;
+            }
+            .container-cabecalho {
+                width: 45%;
+                height: 100vh;
+                padding: 55px;
+                position: fixed;
+            }
+            .container-estacoes {
+                width: 55%;
+                padding-top: 75px;
+            }
+            .estacoes__barra {
+                margin-left: 80px;
+                margin-top: -35px;
+            }
+            .topo__link a {
+                font-size: 16px;
+            }
+            .estacoes__lista li {
+                font-size: 16px;
+            }
+        }
+        /* @media (min-width:)     */
