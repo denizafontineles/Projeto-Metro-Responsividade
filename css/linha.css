@@ -1,104 +1,133 @@
-        * {
-            box-sizing: border-box;
-            font-family: 'Rubik', sans-serif;
-        }
-        
-        body {
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .container-cabecalho {
-            background-color: #024fa3;
-            padding: 25px;
-            /* position: fixed; */
-        }
-        
-        .container-cabecalho__topo {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 20px;
-        }
-        
-        .topo__img img {
-            width: 100px;
-        }
-        
-        .topo__link {
-            display: flex;
-        }
-        
-        .topo__link a {
-            color: #ffffff;
-            font-style: italic;
-            font-size: 12px;
-        }
-        
-        .conteudo__titulo h1 {
-            color: #ffffff;
-            font-size: 26px;
-            padding-left: 8px;
-        }
-        
-        .conteudo__texto p {
-            color: #ffffff;
-            font-size: 16px;
-            font-style: italic;
-            line-height: 1.8;
-        }
-        
-        .linha {
-            margin: 6px auto;
-            background-color: #024fa3;
-            padding-top: 1px;
-        }
-        
-        .container-estacoes {
-            display: flex;
-        }
-        
-        .estacoes__nome {
-            display: flex;
-            margin: -20px -70px;
-        }
-        
-        .estacoes__barra {
-            background-color: #04458a;
-            display: flex;
-            width: 24px;
-            max-height: 250vh;
-            border-radius: 24px;
-            justify-content: flex-start;
-            margin-top: -40px;
-            margin-left: 30px;
-            box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
-        }
-        
-        .estacoes__lista li {
-            list-style-type: none;
-            font-style: italic;
-            line-height: 3.6;
-            justify-content: flex-start;
-            font-size: 14px;
-            margin-top: 28px;
-            margin: 10px;
-        }
-        
-        .circle {
-            display: inline-block;
-            margin-right: 24px;
-            width: 12px;
-            height: 12px;
-            background-color: #ffffff;
-            border-radius: 100%;
-            box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
-            position: relative;
-            z-index: 999;
-        }
-        
-        @media (min-width: 960px) {
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container-cabecalho {
+    padding: 20px;
+ 
+}
+
+.container-cabecalho__topo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.topo__img img {
+    width: 100px;
+}
+
+.topo__link {
+    display: flex;
+}
+
+.topo__link a {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.conteudo__titulo h1 {
+    color: #ffffff;
+    font-size: 24px;
+    padding-left: 8px;
+}
+
+.conteudo__texto p {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.linha {
+    margin: 6px auto;
+    padding-top: 1px;
+}
+
+.container-estacoes {
+    display: flex;
+}
+
+.estacoes__nome {
+    display: flex;
+    margin: -20px -70px;
+}
+
+.estacoes__barra {
+    display: flex;
+    width: 24px;
+    height: 246vh;
+    border-radius: 24px;
+    justify-content: flex-start;
+    margin-top: -40px;
+    margin-left: 16px;
+}
+
+.estacoes__lista li {
+    list-style-type: none;
+    font-style: italic;
+    line-height: 3.6;
+    justify-content: flex-start;
+    font-size: 14px;
+    margin-top: 28px;
+    margin: 10px;
+}
+
+.circle {
+    display: inline-block;
+    margin-right: 24px;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 999;
+}
+/* ===== CORES LINHAS ==== */
+
+/* ===== AZUL ==== */
+.linha-azul .container-cabecalho,
+.linha-azul .linha,
+.linha-azul .estacoes__barra {
+    background-color: #024fa3;}
+
+/* ===== AMARELA ==== */
+.linha-amarela .container-cabecalho,
+.linha-amarela .linha,
+.linha-amarela .estacoes__barra{
+    background-color: #ffd036;}
+
+/* ===== VERMELHA ==== */
+.linha-vermelha .container-cabecalho,
+.linha-vermelha .linha,
+.linha-vermelha .estacoes__barra{
+    background-color: #ff422d;}
+
+/* ===== VERDE ==== */
+.linha-verde .container-cabecalho,
+.linha-verde .linha,
+.linha-verde .estacoes__barra{
+    background-color: #007f61;}
+
+/* ===== LILÁS ==== */
+.linha-lilas .container-cabecalho,
+.linha-lilas .linha,
+.linha-lilas .estacoes__barra{
+    background-color: #6549a6;}
+
+/* =====Media Query===== */
+
+ @media (min-width: 960px) {
             body {
                 height: 100%;
                 display: flex;
