@@ -11,9 +11,8 @@ body {
 }
 
 .container-cabecalho {
-    background-color: #024fa3;
     padding: 20px;
-    /* position: fixed; */
+ 
 }
 
 .container-cabecalho__topo {
@@ -51,7 +50,6 @@ body {
 
 .linha {
     margin: 6px auto;
-    background-color: #024fa3;
     padding-top: 1px;
 }
 
@@ -65,7 +63,6 @@ body {
 }
 
 .estacoes__barra {
-    background-color: #04458a;
     display: flex;
     width: 24px;
     height: 246vh;
@@ -96,6 +93,39 @@ body {
     position: relative;
     z-index: 999;
 }
+/* ===== CORES LINHAS ==== */
+
+/* ===== AZUL ==== */
+.linha-azul .container-cabecalho,
+.linha-azul .linha,
+.linha-azul .estacoes__barra {
+    background-color: #024fa3;}
+
+/* ===== AMARELA ==== */
+.linha-amarela .container-cabecalho,
+.linha-amarela .linha,
+.linha-amarela .estacoes__barra{
+    background-color: #ffd036;}
+
+/* ===== VERMELHA ==== */
+.linha-vermelha .container-cabecalho,
+.linha-vermelha .linha,
+.linha-vermelha .estacoes__barra{
+    background-color: #ff422d;}
+
+/* ===== VERDE ==== */
+.linha-verde .container-cabecalho,
+.linha-verde .linha,
+.linha-verde .estacoes__barra{
+    background-color: #007f61;}
+
+/* ===== LILÁS ==== */
+.linha-lilas .container-cabecalho,
+.linha-lilas .linha,
+.linha-lilas .estacoes__barra{
+    background-color: #6549a6;}
+
+/* =====Media Query===== */
 
 @media (min-width: 960px) {
     body {
