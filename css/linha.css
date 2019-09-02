@@ -55,6 +55,7 @@ body {
 
 .container-estacoes {
     display: flex;
+   min-height: 150vh; 
 }
 
 .estacoes__nome {
@@ -65,11 +66,13 @@ body {
 .estacoes__barra {
     display: flex;
     width: 24px;
-    height: 246vh;
+    min-height: 150vh;
+  
     border-radius: 24px;
     justify-content: flex-start;
     margin-top: -40px;
     margin-left: 16px;
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
 .estacoes__lista li {
@@ -99,25 +102,25 @@ body {
 .linha-azul .container-cabecalho,
 .linha-azul .linha,
 .linha-azul .estacoes__barra {
-    background-color: #024fa3;}
+    background-color: #003c86;}
 
 /* ===== AMARELA ==== */
 .linha-amarela .container-cabecalho,
 .linha-amarela .linha,
 .linha-amarela .estacoes__barra{
-    background-color: #ffd036;}
+    background-color: #fcbd0f;}
 
 /* ===== VERMELHA ==== */
 .linha-vermelha .container-cabecalho,
 .linha-vermelha .linha,
 .linha-vermelha .estacoes__barra{
-    background-color: #ff422d;}
+    background-color: #ed4e17;}
 
 /* ===== VERDE ==== */
 .linha-verde .container-cabecalho,
 .linha-verde .linha,
 .linha-verde .estacoes__barra{
-    background-color: #007f61;}
+    background-color: #006d58;}
 
 /* ===== LILÁS ==== */
 .linha-lilas .container-cabecalho,
@@ -132,29 +135,38 @@ body {
                 height: 100%;
                 display: flex;
             }
+
             .conteudo__titulo h1 {
                 font-size: 40px;
             }
+
             .conteudo__texto p {
                 font-size: 20px;
             }
+
             .container-cabecalho {
                 width: 45%;
-                height: 100vh;
-                padding: 55px;
+                max-height: 100vh;
+                padding: 35px;
                 position: fixed;
             }
+
             .container-estacoes {
                 width: 55%;
                 padding-top: 75px;
+               
             }
+
             .estacoes__barra {
                 margin-left: 80px;
                 margin-top: -35px;
+                /* min-height: 100vh; */
             }
+
             .topo__link a {
                 font-size: 16px;
             }
+
             .estacoes__lista li {
                 font-size: 16px;
             }
